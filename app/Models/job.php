@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class jop
+class job
 {
     public static function getAllJobs()
     {

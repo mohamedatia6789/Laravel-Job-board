@@ -2,15 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\jop;
+use App\Models\job;
 use Illuminate\Http\Request;
-
 
 class JobController extends Controller
 {
-    public function index()
-    {
-        $data = jop::getAllJobs();
-        return view('index', ['data'=> $data , "name" => "Mohamed Atia"]);
+    public function index(){
+        return view("index", ["title" => 'Home']);
+    }
+    public function about(){
+        return view("about" , ["title" => 'About']);
+    }
+    public function contact(){
+        return view("contact", ["title" => 'Contact']);
     }
 }
+
+
+
+
+

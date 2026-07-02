@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/yy',[JobController::class , 'index']);
+Route:: get("/",[JobController::class,"index"]);
+Route::get("/about",[JobController::class,"about"]);
+Route::get("/contact",[JobController::class,"contact"]);

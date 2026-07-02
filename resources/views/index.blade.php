@@ -1,6 +1,3 @@
-<div>
-    @foreach ($data as $job)
-        <h1>{{ $job['titel'] }} : {{ $job['Salary'] }} </h1>
-    
-    @endforeach
-</div>
+<x-layout title="{{ $title }}">
+    <h2>Mohamed </h2>
+</x-layout>
