@@ -50,7 +50,16 @@ return [
     |
     */
 
+
     'channels' => [
+
+    // قناة جديدة خاصة بعمليات الحظر والأمان
+    
+        'security' => [
+            'driver' => 'single', // أو daily عشان يعمل ملف جديد كل يوم
+            'path' => storage_path('logs/security.log'), // مسار الملف الخارجي
+            'level' => 'warning',
+        ],
 
         'stack' => [
             'driver' => 'stack',
